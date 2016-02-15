@@ -6,7 +6,7 @@ Demo page: [donsro.atwebpages.com/projects/krossover] (http://donsro.atwebpages.
 Thank you.
 
 ### Assignment
-Create an application that allows a user to slice up a video sample video: http://grochtdreis.de/fuer-jsfiddle/video/sintel_trailer-480.mp4 into clips. As part of this application, use at least one of the following frameworks to facilitate development however you may also use any other tools to help complete the project:
+Create an application that allows a user to slice up a video sample: http://grochtdreis.de/fuer-jsfiddle/video/sintel_trailer-480.mp4 into clips. As part of this application, use at least one of the following frameworks to facilitate development however you may also use any other tools to help complete the project:
 
 - [x] AngularJS **\[ D.S. AngularJS version 1.4.9. \]**
 - [ ] Angular 2
