@@ -1,0 +1,65 @@
+/* Utility */
+.float-left {
+	float: left;
+}
+.float-right {
+	float: right;
+}
+.clear-both {
+	clear: both;
+}
+.container { /* clear fix */
+	overflow: hidden; /* can also be "auto" */
+}
+.text-strong {
+	font-weight: bold;
+}
+.text-pale {
+	color: #ccc;
+}
+.text-right {
+	text-align: right;
+}
+
+/* Content */
+.video-box {
+	float: left;
+	width: 360px;
+}
+.main-content {
+	float: left;
+	width: 640px;
+}
+#testVideo {
+	background: transparent url(loader.gif) no-repeat center center;
+}
+.movie-clips {
+	list-style-type: none;
+	padding-left: 0;
+}
+.movie-clips li {
+	padding: 1em;
+	border-bottom: 1px solid #ccc;
+}
+.movie-clips .edit-inputs {
+	margin-top: 0;
+	margin-left: 1em;
+}
+.movie-clips .edit-inputs dt {
+	float: left;
+	min-width: 8em;
+}
+.movie-clips .edit-inputs dd {
+	margin-bottom: .5em;
+}
+.app-footer {
+	text-align: center;
+	margin: 1em;
+	padding: 1em 0;
+	font-size: 85%;
+}
+
+/* ngClass current */
+.current {
+	background-color: #f5f5c3;
+}
