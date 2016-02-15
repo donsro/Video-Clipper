@@ -1,5 +1,5 @@
 # Video Clipper
-Hi there. Although *Video Clipper* is still pretty *bare bone* app, I believe it meets basic test assignment requirements. Please note this app has only been tested in *Chrome* and *Firefox*. I hope it should also work in *Safari* well. *IE* has issues with HTML5 video fragments. My other comments can be found below in **\[ D.S. ... \]**.
+Hi there. Although *Video Clipper* is still pretty *bare bone* app, I believe it meets basic test assignment requirements. Please note this app has only been tested in *Chrome* and *Firefox*. I hope it should work in *Safari* as well. *IE* has issues with HTML5 video fragments. My other comments can be found below in **\[ D.S. ... \]**.
 
 Demo page: [donsro.atwebpages.com/projects/krossover] (http://donsro.atwebpages.com/projects/krossover/index.html).
 
