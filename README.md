@@ -1,5 +1,5 @@
 # Video Clipper
-Hi there. Although *Video Clipper* is still pretty *bare bone* app I believe it meets basic test assignment requirements. Please note that this app has only been tested in *Chrome* and *Firefox*. I hope it should also work well in *Safari*. *IE* has issues with HTML5 video fragments. My other comments can be found below in **\[ D.S. ... \]**.
+Hi there. Although *Video Clipper* is still pretty *bare bone* app, I believe it meets basic test assignment requirements. Please note this app has only been tested in *Chrome* and *Firefox*. I hope it should also work in *Safari* well. *IE* has issues with HTML5 video fragments. My other comments can be found below in **\[ D.S. ... \]**.
 
 Demo page: [donsro.atwebpages.com/projects/krossover] (http://donsro.atwebpages.com/projects/krossover/index.html).
 
@@ -23,12 +23,12 @@ Create an application that allows a user to slice up a video sample video: http:
 - [x] The ability to edit existing clips in the list.
 - [x] The ability to play clips in the video player.
 
-**\[ D.S. Mandatory features completed. \]**
+**\[ D.S. All completed. \]**
 
 ### Bonus (Optional)
 - [x] The ability to automatically jump to the next clip after it finishes, with a 3 second waiting period and appropriate loading animation. **\[ D.S. I added *Play All* button. It plays all clips in the list from top to bottom with 3s delay. \]**
 - [x] The ability to save clips for persistent use.
-- [x] The ability to add arbitrary 'tags' to clips so that they can be filtered by the tag name. **\[ D.S. Yes you can add, modify and filter clips by *tag* property value. \]**
+- [x] The ability to add arbitrary 'tags' to clips so that they can be filtered by the tag name. **\[ D.S. Yes you can add, modify and filter clips by *tag* property's value. \]**
 - [ ] Hotkeys to jump between the current clip and next and previous clips (if there are any).
 - [ ] Markers on the video player timeline that denote where a clip starts (full video only).
 - [ ] Clicking the marker chooses that clip and plays it from that point.
