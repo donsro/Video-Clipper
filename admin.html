@@ -7,7 +7,10 @@
 	</video>
 </aside>
 <section class="main-content">
-	<p>Filter by tag <input placeholder="Try 'a', 'b' and 'c'" ng-model="tagName"> (<em>New tags can be added and modified.</em>)</p>
+	<p>
+		Filter by tag <input placeholder="Try 'a', 'b' and 'c'" ng-model="tagName">
+		(<em>New tags can be added and modified.</em>)
+	</p>
 	<ul class="movie-clips">
 		<li ng-class="{ current: selected == 'full' }">
 			<span ng-hide="editFull" class="text-strong">{{ movieName }}.</span>
@@ -46,11 +49,21 @@
 			</dl>
 		</li>
 	</ul>
-	<p class="float-right"><button ng-click="playAllFragments()">Play All</button></p>
+	<p class="float-right">
+		<button ng-click="playAllFragments()">Play All</button>
+	</p>
 	<h4>New video clip</h4>
-	<p>Name: <input placeholder="Video clip name" ng-model="name"></p>
-	<p>Tag: <input placeholder="Tag" ng-model="tag"></p>
-	<p>Start: <input type="number" placeholder="0-{{dRounded}}" max="{{dRounded}}" min="0" ng-model="start"> s.
-	End: <input type="number" placeholder="{{start || 0}}-{{dRounded}}" max="{{dRounded}}" min="{{start || 0}}" ng-model="end"> s.</p>
-	<p><button ng-click="addItem({name: name, tag: tag, start: start, end: end })">Add New</button></p>
+	<p>
+		Name: <input placeholder="Video clip name" ng-model="name">
+	</p>
+	<p>
+		Tag: <input placeholder="Tag" ng-model="tag">
+	</p>
+	<p>
+		Start: <input type="number" placeholder="0-{{dRounded}}" max="{{dRounded}}" min="0" ng-model="start"> s.
+		End: <input type="number" placeholder="{{start || 0}}-{{dRounded}}" max="{{dRounded}}" min="{{start || 0}}" ng-model="end"> s.
+	</p>
+	<p>
+		<button ng-click="addItem({name: name, tag: tag, start: start, end: end })">Add New</button>
+	</p>
 </section>
