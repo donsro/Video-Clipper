@@ -1,9 +1,7 @@
 # Video Clipper
-
-Hi there. Although this *Video Clipper* is still pretty *bare bone* app I believe it meets basic assignment requirements. Demo can be found at [donsro.atwebpages.com/projects/krossover] (http://donsro.atwebpages.com/projects/krossover/index.html). My comments below **\[ D.S. ... \]**. Thank you.
+Hi there. Although *Video Clipper* is still pretty *bare bone* app I believe it meets basic test assignment requirements. Please note that this app was only tested in *Chrome* and *Firefox*. I hope it should also work well in *Safari*. *IE* has issues with HTML5 video fragments. My other comments can be found below in **\[ D.S. ... \]**. Demo page: [donsro.atwebpages.com/projects/krossover] (http://donsro.atwebpages.com/projects/krossover/index.html). Thank you.
 
 ### Assignment
-
 Create an application that allows a user to slice up a video sample video: http://grochtdreis.de/fuer-jsfiddle/video/sintel_trailer-480.mp4 into clips. As part of this application, use at least one of the following frameworks to facilitate development however you may also use any other tools to help complete the project:
 
 - [x] AngularJS **\[ D.S. AngularJS version 1.4.9. \]**
@@ -13,7 +11,6 @@ Create an application that allows a user to slice up a video sample video: http:
 - [ ] AureliaJS
 
 ### Mandatory Features
-
 - [x] An HTML5 video player that utilizes media fragments.
 - [x] A list of clips to be played in the video player.
 - [x] The first item in the list should be the full video.
@@ -24,9 +21,7 @@ Create an application that allows a user to slice up a video sample video: http:
 
 **\[ D.S. Mandatory features completed. \]**
 
-
 ### Bonus (Optional)
-
 - [x] The ability to automatically jump to the next clip after it finishes, with a 3 second waiting period and appropriate loading animation. **\[ D.S. I added *Play All* button. It plays all clips in the list from top to bottom with 3s delay. \]**
 - [x] The ability to save clips for persistent use.
 - [x] The ability to add arbitrary 'tags' to clips so that they can be filtered by the tag name. **\[ D.S. Yes you can add, modify and filter clips by *tag* property value. \]**
