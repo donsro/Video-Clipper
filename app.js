@@ -4,10 +4,15 @@ var app = angular.module('videoClipApp', ['ngRoute']);
 
 app.controller('mainCtrl', ['$scope', 'videoFragments', function ($scope, videoFragments) {
 
+	var videoEl = document.querySelector('#testVideo');
+
+	$scope.list = videoFragments.getAll();
+	$scope.addItem = videoFragments.addItem;
+	$scope.removeItem = videoFragments.removeItem;
+
 	$scope.edit = false;
 	$scope.editFull = false;
 	$scope.movieName = 'Full Movie';
-	var videoEl = document.querySelector('#testVideo');
 
 	videoEl.addEventListener('loadedmetadata', function () {
 		$scope.$apply( function () {
@@ -16,10 +21,6 @@ app.controller('mainCtrl', ['$scope', 'videoFragments', function ($scope, videoF
 			$scope.dRounded = Math.round($scope.duration);
 		});
 	}, false);
-
-	$scope.list = videoFragments.getAll();
-	$scope.addItem = videoFragments.addItem;
-	$scope.removeItem = videoFragments.removeItem;
 
 	$scope.playVideoFragment = function (start, end, name, itemIndex) {
 		$scope.selected = itemIndex;
@@ -34,6 +35,12 @@ app.controller('mainCtrl', ['$scope', 'videoFragments', function ($scope, videoF
 		videoEl.play();
 	};
 
+	var playVideoTimeout = function (start, end, name, idx, scope) {
+		return window.setTimeout( function () {
+			scope.playVideoFragment(start, end, name, idx);
+		}, 3000);
+	};
+
 	$scope.playAllFragments = function () {
 		var fragCount = $scope.list.length - 1, i = 0, frag = $scope.list[0];
 		videoEl.addEventListener('pause', function() {
@@ -41,11 +48,7 @@ app.controller('mainCtrl', ['$scope', 'videoFragments', function ($scope, videoF
 				//videoEl.src = '';
 				$scope.clipName = 'Timeout 3s';
 				frag = $scope.list[++i];
-				$scope.$apply( function () {
-					window.setTimeout( function () {
-						$scope.playVideoFragment(frag.start, frag.end, frag.name, i);
-					}, 3000);
-				});
+				$scope.$apply(playVideoTimeout(frag.start, frag.end, frag.name, i, $scope));
 			}
 		}, false);
 		$scope.playVideoFragment(frag.start, frag.end, frag.name, i);
