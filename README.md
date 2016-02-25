@@ -1,7 +1,7 @@
 # Video Clipper
 Hi there. Although *Video Clipper* is still pretty *bare bone* app, I believe it meets basic Front-end code test assignment requirements. Please note this app has only been tested in *Chrome* and *Firefox*. I hope it should work in *Safari* as well. *IE* has issues with HTML5 video URI fragments. My other comments can be found below in **\[ D.S. ... \]**.
 
-Demo page: [donsro.atwebpages.com/projects/video-clipper] (http://donsro.atwebpages.com/projects/video-clipper/index.html).
+Demo page: [donsro.atwebpages.com/projects/video-clipper/index.html] (http://donsro.atwebpages.com/projects/video-clipper/index.html)
 
 Thank you.
 
